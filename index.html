@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copy Catcher</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Copy Catcher</h1>
+            <p>Your Intelligent Plagiarism Detection Tool</p>
+        </div>
+    </header>
+    <main>
+        <!-- Side-by-Side Input Sections -->
+        <div class="input-container">
+            <!-- File Upload Section (Left) -->
+            <section class="upload-section">
+                <h2>Upload Your Document</h2>
+                <form id="file-upload-form" class="input-form">
+                    <input type="file" id="file-input" accept=".docx,.pdf,.txt">
+                    <button type="submit" class="animated-button">Analyze File</button>
+                </form>
+            </section>
+            <!-- Text Input Section (Right) -->
+            <section class="text-upload-section">
+                <h2>Paste Your Text</h2>
+                <form id="text-upload-form" class="input-form">
+                    <textarea id="text-input" placeholder="Paste your text here..." rows="8"></textarea>
+                    <button type="submit" class="animated-button">Analyze Text</button>
+                </form>
+            </section>
+        </div>
+        
+        <!-- Results Section -->
+        <section class="results-section" id="results">
+            <h2>Analysis Results</h2>
+            <div class="result-container">
+                <p id="status">No data yet. Upload a file or paste text to see results.</p>
+                <div id="similarity-bar" style="display: none; width: 100%; background: #e0e0e0; height: 25px; border-radius: 12px; overflow: hidden;">
+                    <div id="similarity-progress" style="height: 100%; background: linear-gradient(to right, #00cc00, #00ff99); transition: width 0.5s ease;"></div>
+                </div>
+                <div id="details"></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 Copy Catcher | Designed by B. Manikanta</p>
+    </footer>
+    <script src="script.js" defer></script>
+</body>
+</html>
