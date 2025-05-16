@@ -83,9 +83,7 @@ Python is a high-level programming language designed to be easy to read and simp
 
 Fork it. Code it. PR it. Let’s build! 🚀
 
-## 📜 License
 
-MIT License. See LICENSE.
 
 ## 📬 Contact
 
